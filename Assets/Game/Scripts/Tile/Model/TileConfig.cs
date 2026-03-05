@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Game.Scripts.Tile
+namespace Game.Scripts.Tiles
 {
     [CreateAssetMenu(fileName = "TileConfig", menuName = "Tile/TileConfig", order = 0)]
     public sealed class TileConfig : ScriptableObject

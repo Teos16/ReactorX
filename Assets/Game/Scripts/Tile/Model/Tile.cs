@@ -1,25 +1,34 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Game.Scripts.Tile
+namespace Game.Scripts.Tiles
 {
-    public sealed class Tile : Entity
+    public sealed class Tile : MonoBehaviour
     {
         public event Action<int> OnLevelChanged;
-        
-        private TileConfig _config;
+        public event Action<Players.Player> OnOwnerChanged;
 
+        private Players.Player _owner;
+        private TileConfig _config;
+        
         private int _level;
 
         public void SetConfig(TileConfig config) => _config = config;
         
         public void SetLevel(int level)
         {
-            _level = Mathf.Clamp(level, _config.MinTileLevel, _config.MaxTileLevel);
-            if (_level == level)
+            int newLevel = Mathf.Clamp(level, _config.MinTileLevel, _config.MaxTileLevel);
+            if (_level == newLevel) return;
+            _level = newLevel;
+            OnLevelChanged?.Invoke(_level);
+        }
+
+        public void SetOwner(Players.Player owner)
+        {
+            if (_owner != owner)
             {
-                OnLevelChanged?.Invoke(_level);
-                Debug.Log($"Tile level changed to {_level}");
+                _owner = owner;
+                OnOwnerChanged?.Invoke(owner);
             }
         }
     }

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3703828297428341164}
   - component: {fileID: 7632931822248596574}
+  - component: {fileID: 4509951824447691374}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -45,7 +46,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b3c0a63b4b4cabbbd1408939d8c36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game::Game.Scripts.Tile.TileView
+  _tile: {fileID: 4509951824447691374}
   _config: {fileID: 11400000, guid: 37fa41f44a63e4c44a6087071e3cd032, type: 2}
+  _meshRenderer: {fileID: 1493386690952822376}
+--- !u!114 &4509951824447691374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059182752186336936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92077d380a8044d69c3a0b070f0fef5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game::Game.Scripts.Tile.Tile
 --- !u!1001 &249957379937624812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118,5 +133,10 @@ PrefabInstance:
 --- !u!4 &356557966491911431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb82979f61e62df4c8ea9591c9e88787, type: 3}
+  m_PrefabInstance: {fileID: 249957379937624812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1493386690952822376 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: fb82979f61e62df4c8ea9591c9e88787, type: 3}
   m_PrefabInstance: {fileID: 249957379937624812}
   m_PrefabAsset: {fileID: 0}

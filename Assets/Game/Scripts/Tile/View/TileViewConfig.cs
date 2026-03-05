@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Game.Scripts.Tile
+namespace Game.Scripts.Tiles
 {
     [CreateAssetMenu(fileName = "TileViewConfig", menuName = "Tile/TileViewConfig", order = 0)]
     public sealed class TileViewConfig : ScriptableObject

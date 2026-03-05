@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Game.Scripts.Tile
+namespace Game.Scripts
 {
     public class Entity
     {
