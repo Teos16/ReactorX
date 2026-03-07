@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 359534706}
   m_Layer: 0
-  m_Name: Container
+  m_Name: <Container>
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5222023281990811741, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5222023281990811741, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -279,8 +279,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 1305716530}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: cluster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: currentLevel
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: playerConfig
@@ -290,9 +298,17 @@ PrefabInstance:
       propertyPath: playerService
       value: 
       objectReference: {fileID: 767284543}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
     - target: {fileID: 7942709455171839110, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_Name
       value: TileEditor (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942709455171839110, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -304,6 +320,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5222023281990811741, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
   m_PrefabInstance: {fileID: 1305716528}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1305716530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2942765597996356567, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+  m_PrefabInstance: {fileID: 1305716528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e256cddfa7e749bc96ec15c9ef55c9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game::Game.Scripts.Tiles.TileViewEditor
 --- !u!1001 &2015377888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -318,7 +345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5222023281990811741, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5222023281990811741, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_LocalPosition.z
@@ -353,16 +380,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 2015377890}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: cluster
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: currentLevel
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: playerService
       value: 
       objectReference: {fileID: 767284543}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7942709455171839110, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_Name
       value: TileEditor (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942709455171839110, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -374,6 +417,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5222023281990811741, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
   m_PrefabInstance: {fileID: 2015377888}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2015377890 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2942765597996356567, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+  m_PrefabInstance: {fileID: 2015377888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e256cddfa7e749bc96ec15c9ef55c9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game::Game.Scripts.Tiles.TileViewEditor
 --- !u!1 &2125729467
 GameObject:
   m_ObjectHideFlags: 1
@@ -474,18 +528,53 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: _view
+      value: 
+      objectReference: {fileID: 2680782857293625723}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: cluster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: currentLevel
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: playerConfig
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a8c4519d9f749148bd28c17b7fc8eb9, type: 2}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: playerService
       value: 
       objectReference: {fileID: 767284543}
+    - target: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 6090549460682684213, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
     - target: {fileID: 7942709455171839110, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
       propertyPath: m_Name
       value: TileEditor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7942709455171839110, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+--- !u!114 &2680782857293625723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2942765597996356567, guid: b12b6edf1cb62e041b477c9b19b808be, type: 3}
+  m_PrefabInstance: {fileID: 2680782857293625722}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e256cddfa7e749bc96ec15c9ef55c9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Game::Game.Scripts.Tiles.TileViewEditor
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
